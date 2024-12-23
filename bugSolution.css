@@ -1,0 +1,19 @@
+/* bugSolution.css */
+
+.container {
+  width: 500px;
+  background-color: lightgray;
+}
+
+.element {
+  width: calc(min(100%, 200px)); /* Use min() to avoid negative values */
+  background-color: lightblue;
+  height: 100px;
+}
+
+/*Correcting the Operator Precedence Issues */
+.element2 {
+  width: calc( (100% - 200px) * 0.5); /*Adding parenthesis to show operator precedence */
+  background-color: lightblue;
+  height: 100px;
+} 
